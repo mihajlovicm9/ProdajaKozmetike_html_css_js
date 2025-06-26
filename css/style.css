@@ -75,14 +75,94 @@ color: rgb(47, 66, 16);
   box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.42);
 }
 .novi-proizvod h4 {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 2px;
   font-size: 20px;
-  font-style: normal;
-  color: rgb(47, 66, 16);}
-
+}
   #novi-proizvodi-content img:hover {
     transform: rotateY(180deg);
     /*cursor: pointer;*/
   }
+  #najprodavanije{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   gap:10px;
+   max-width: 1000px;
+   margin: 40px auto;
+   background-color: rgba(196, 221, 142, 0.571);
+   border-radius: 20px;
+   height: 600px;
+   border: 3px solid rgb(112, 141, 65);
+  box-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.42);
+  overflow:hidden;/*dodala sam da bi se border video, u suprotnom ga slika prekriva dole. Postoje jos i opcije scroll,visible,auto*/
+}
+
+#najprodavanije-slika img{
+  width:100%;
+  border-radius: 20px 0 0 20px;
+  height:100%;
+}
+
+
+#najprodavanije-slika{
+  height:600px;
+  overflow: hidden;;
+}
+#najprodavanije-tekst{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding :0 5px;
+  position:relative;
+}
+#najprodavanije-tekst h3{
+  margin-bottom:20px ;
+  margin-top: 30px;
+}
+#najprodavanije-tekst h3:after{
+  content:"";
+  display:block;
+  width:150px;
+  height:1px;
+background-color: rgba(24, 128, 29, 0.641);
+margin: 3px auto;
+} 
+h3,h4{
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+  color: rgb(47, 66, 16);
+}
+#najprodavanije-tekst h3{
+font-size: 30px;
+transition:transform 0.5s ease;
+animation-name: ljuljanje;
+  animation-duration: 1s;
+  animation-iteration-count: 4; /*broj ponavljanja animacije, infinite za beskrajno*/
+  animation-direction: alternate;/*normal od 0% do 100%, reverse od 100 do 0, alternate normalno pa unazad, alternate.reverse unazad pa normalno*/
+  animation-timing-function: linear; /*ne menja se, ease-in-out, ease, ease-in, ease-out*/
+
+}
+#stiker{
+  background-color: rgb(205, 34, 34);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: absolute;/*i roditelj mora biti pozicioniran*/
+  top:0;
+  right: 0;
+  border-radius: 2px;
+  width: 180px;
+  text-align: center;
+}
+
+@keyframes ljuljanje{
+  0% {
+    transform:rotate(5deg);
+  }
+  50% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(-5deg);
+  }
+}
