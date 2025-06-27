@@ -166,3 +166,26 @@ animation-name: ljuljanje;
     transform:rotate(-5deg);
   }
 }
+
+#o-nama-content {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:40px;
+  margin: 20px auto;
+  max-width:1200px;
+}
+#o-nama-content img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgb(76, 61, 129);
+  box-shadow: 2px 4px 4px rgb(48, 47, 47);
+}
+#o-nama{
+background-color: rgba(182, 208, 223, 0.847);
+padding:20px 20px;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
