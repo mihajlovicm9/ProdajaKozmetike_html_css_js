@@ -381,3 +381,49 @@ opacity: 1;
 .zasto-bas-mi-stavka:nth-child(4){
   animation-delay: 2s;
 }
+.lista-zanimljivosti{
+  margin: 15px;
+  list-style-type:circle;
+  list-style-position: inside;
+  
+}
+.lista-zanimljivosti li{
+  margin: 10px;
+  padding: 5px;
+  background-color:rgba(196, 221, 142, 0.571);
+  border: 1px solid #8cbb7d;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgb(37, 67, 44);
+}
+#zanimljivosti{
+  padding: 30px;
+  background-color:rgba(180, 226, 215, 0.668);
+  margin:20px 0; 
+}
+#zanimljivosti-grid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+#zanimljivosti-slika{
+  height: 90%;
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;/*sve sto viri iz roditelja (coskovi slike zbog border radiusa) se nece videti. Umesto ovog se može postaviti border radius na sliku*/
+border: 1px solid rgb(52, 121, 90);
+box-shadow: 4px 2px 2px rgb(37, 67, 44);
+}
+#zanimljivosti-slika img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#zanimljivosti-lista{
+  height: 90%;
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#zanimljivosti h2{
+  margin: 15px;
+}
