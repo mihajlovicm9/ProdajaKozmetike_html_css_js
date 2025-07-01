@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registracija</title>
+    <script
+      src="https://kit.fontawesome.com/1467ed06b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/registracija.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section id="registracija">
+      <h2>Kreiraj nalog</h2>
+      <div id="forma">
+        <form id="forma-za-registraciju">
+            <div class="input-group">
+          
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name="ime-i-prezime"
+              id="ime"
+              placeholder="Unesite ime i prezime"
+              required />
+          <br /> </div>
+          </i>
+          <div class="input-group">
+          
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Unesite email"
+            required
+          /><br />
+          </div>
+        <div class="input-group">
+          
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              name="lozinka"
+              id="lozinka"
+              placeholder="Unesite lozinku"
+              required
+            /><br />
+          </div>
+         <div class="input-group">
+          
+           <i class="fa-solid fa-phone"></i>
+          <input
+            type="tel"
+            name="telefon"
+            id="tel"
+            placeholder="Unesite broj telefona"
+          /><br /></div>
+          <div class="input-group">
+          
+          <i class="fa-solid fa-calendar"></i>
+          <input
+            type="date"
+            name="datum-rođenja"
+            id="datum"
+            placeholder="Unesite datum rođenja"
+          /><br /></div>
+          <div class="input-group">
+          <i class="fa-solid fa-venus-mars"></i>
+          <select name="pol" required>
+            <option value="" disabled selected class="opcija">Izaberi pol</option>
+            <option value="muško" class="opcija">Muški</option>
+            <option value="ženski" class="opcija">Ženski</option></select
+          ><br /></div>
+          
+          <div class="checkbox">
+          <input type="checkbox" name="privati_uslove" id="uslovi" value="da" />
+          <label for="uslovi" >Prihvatam <a href="https://www.intlcosmetics.com/terms-and-conditions/
+            " target="_blank">uslove</a> korišćenja</label><br />
+          </div>
+          <button class="dugme-submit">Registruj se</button>
+          <br>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+#registracija {
+  color: rgb(80, 61, 7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 450px;
+  padding: 20px 10px;
+  position: relative; /*dodato zbog pozicioniranja dugmeta*/
+  height: 600px;
+  border-radius: 15px;
+  background-color: rgba(234, 251, 230, 0.519);
+}
+body {
+  background-image: url(../img/registracija-slika.jpeg);
+  background-position: center -200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#registracija h2 {
+  font-weight: 600;
+  color: rgb(58, 44, 35);
+  letter-spacing: 2px;
+}
+
+.input-group {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+.input-group i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.input-group input {
+  padding: 3px;
+  border: none; /*jedna od stvari koju radimo da mi se input i input-group stopili, da izgledaju kao jedno polje*/
+  border-radius: 5px;
+  background-color: #fff;
+  width: 90%;
+}
+.input-group input:focus {
+  outline: none; /*na ovaj nacin se nece videti crni okvir kada kliknem na input*/
+  /*border:none;*/
+}
+
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+.input-group select:focus {
+  outline: none;
+}
+.checkbox {
+  padding: 10px;
+  gap: 5px;
+  font-size: 17px;
+}
+
+.dugme-submit {
+  display: block;
+  position: absolute; /*dodato zbog pozicioniranja dugmeta*/
+  right: 20px;
+  bottom: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(203, 197, 179),
+    rgb(175, 152, 119)
+  );
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(75, 51, 20);
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 3px rgb(64, 58, 56);
+  cursor: pointer;
+  /*transition:transform 1s ease;*/ /*radi i bez ovoga*/
+}
+.dugme-submit:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(175, 152, 119),
+    rgb(203, 197, 179)
+  );
+  transform: translateY(-1px);
+}
+#registracija h2 {
+  font-size: 30px;
+}
+.input-group ::placeholder {
+  font-size: 15px;
+}
+.checkbox label {
+  font-size: 15px;
+  color: rgb(58, 36, 16);
+  letter-spacing: 2px;
+}
