@@ -1,0 +1,8 @@
+#registracija{
+    height: 350px;
+}
+p{
+position: relative;/*ovako se pozicionira u odnosu na mesto gde bi inace stajao tekst, bez dodavanja ovoga*/
+bottom: 25px;
+left: 15px;
+}
