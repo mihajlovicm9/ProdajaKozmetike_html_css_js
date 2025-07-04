@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 2px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: rgb(210, 203, 194);
+  
+  color:rgb(92,75,54);
+}
+h2 {
+  color: rgb(49, 32, 19);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+}
+#nasa-ponuda {
+  padding: 20px;
+  
+  text-align: center;
+}
+.proizvod {
+  background-color: rgba(172, 222, 210, 0.847);
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 300px;
+  height: 400px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.42);
+  border: 2px solid rgb(112, 141, 65);
+  position: relative;
+}
+.proizvod img {
+  margin: 10px auto;
+  height: 60%;
+  width: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.proizvod p {
+  margin: 7px auto;
+}
+#svi-nasi-proizvodi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  margin: 15px auto;
+
+  padding: 20px;
+}
+.proizvod button {
+  background-color: rgb(235, 231, 217);
+  padding: 7px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: rgb(75, 51, 20);
+  border: 1px solid rgb(31, 21, 14);
+  box-shadow: 2px 2px 2px rgb(60, 59, 59);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 25px;
+  right: 55px;
+  transition: transform 5ms ease;
+}
+ .stara-cena{
+    text-decoration: line-through;
+    margin-right: 7px;
+    color: rgb(113, 112, 107);
+ }
+  .nova-cena{
+       font-size: 20px; 
+       font-weight: 550;
+       color: rgb(101, 58, 29);
+    }
+ .proizvod button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  color: rgb(235, 231, 217);
+  background-color: rgb(177, 159, 135);
+}
+.fa-solid.fa-cart-plus {
+  margin-right: 7px;
+}
+#nasa-ponuda h2 {
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 400;
+}
+#nasa-ponuda h2:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 280px;
+  background-color: #bf861d;
+  margin: 0px auto;
+}
+
+.fa-solid.fa-tag{
+    margin-right: 3px;
+    color: rgb(101, 58, 29);
+    
+}
+.redovna-cena{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(101, 58, 29);
+}
