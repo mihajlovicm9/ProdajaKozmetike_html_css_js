@@ -12,6 +12,9 @@
   background-color: rgba(234, 251, 230, 0.519);
 }
 body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
   background-image: url(../img/registracija-slika.jpeg);
   background-position: center -200px;
   background-repeat: no-repeat;
