@@ -427,6 +427,31 @@ box-shadow: 4px 2px 2px rgb(37, 67, 44);
 #zanimljivosti h2{
   margin: 15px;
 }
-#registracija{
+nav{
+  /*background-color: rgba(140, 185, 174, 0.749);*/
+ background-color: rgb(125, 165, 146);
+  display: flex;
+  justify-content: space-between;
+  padding:5px;
+
+}
+.nav-linkovi{
+  display: flex;
+  list-style:none;
+  width: 60%;
+  align-items: center;
   
+ justify-content: space-between; /*ne radi ako ovaj div nema konkretnu sirinu postavljenu. Takođe je moguće razmak napraviti dodavaljem margine na stavke liste*/
+ margin: 10px;/*da bi se linkovi odlepili od desne i gornje strane ekrana*/
+}
+.stavka-meni{
+  text-decoration: none;
+  color: rgb(249, 227, 200);
+  
+}
+.logo-slika{
+  height: 80px;
+  width: 200px;
+  object-fit: cover;
+  margin:0;
 }

@@ -22,7 +22,7 @@ body {
   /*background-color: rgba(100, 176, 159, 0.847);*/
   background: url(../img/korpa-pozadina.jpeg) no-repeat center/cover;
 }
-img{
+#svi-proizvodi-iz-korpe img{
     width: 80px;
     height: 80px;
     border-radius:10px;
